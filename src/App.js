@@ -4,13 +4,19 @@ import './App.css';
 function App() {
   const [selectedHobby, setSelectedHobby] = useState(null);
   const [hobbies, setHobbies] = useState([
-    "🧘‍♂️ Meditating", 
-    "📅 Planning My Day", 
-    "🏃‍♂️ Exercising", 
-    "🍎 Eating Healthy", 
-    "📚 Reading Daily"
+    "🐌 Threatening a snail", 
+    "🪞 Offering a chair to your reflection", 
+    "🥿 Writing a letter to your left shoe", 
+    "🔆 Staring at a lamp and telling it it's not bright enough", 
+    "🪨 Trying to teach a rock how to roll", 
+    "🌿 Giving your houseplant a pep talk", 
+    "✏️ Arguing with a pencil about its purpose", 
+    "🧱 Complimenting a wall on its stability", 
+    "🥄 Apologizing to a spoon for not using it enough", 
+    "🌑 Pretending your shadow has feelings and apologizing for stepping on it"
   ]);
   
+
   const [newHobby, setNewHobby] = useState(""); // State for managing input value
 
   // Create an array of refs for the list items
@@ -70,13 +76,15 @@ function App() {
       </div>
 
       <div id='Habbit-Input'>
-          <input 
+        <input 
           className='data-inputs' 
           type='text'
           value={newHobby}
           onChange={handleInputChange}
           placeholder='Enter a new Habbit...'
-          ></input>
+        ></input>
+        
+        
       </div>
 
       <div id="Buttons-Container">
