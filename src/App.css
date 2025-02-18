@@ -51,6 +51,8 @@ li {
   transition: background 0.3s ease;
 
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  cursor: pointer;
   
 }
 
@@ -164,3 +166,19 @@ li:hover {
   opacity: 0.4;
   font-weight: normal;
 }
+
+td{
+  padding: 0px 10px;
+  border-collapse: collapse;
+}
+
+table{
+  background-color: #1c1c1e33;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
