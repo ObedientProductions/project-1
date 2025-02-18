@@ -48,10 +48,14 @@ li {
   font-size: 18px;
   font-weight: 500;
   transition: background 0.3s ease;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 li:hover {
-  background: #48484a;
+  background-color: #007acc;
+  transform: translateY(-2px);
 }
 
 
@@ -72,10 +76,12 @@ li:hover {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.1s ease;
 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .menu-button:hover {
-  background-color: #48484a;
+  background-color: #007acc;
   transform: translateY(-2px);
 }
 
@@ -107,10 +113,47 @@ li:hover {
   outline: none;
 }
 
+.selected{
+  border-color: #ffffff;
+  border-width: 0.15vw;
+  border-style: solid;
+}
+
 #Hobbies-Container {
-  background-color: #2c2c2e; /* Dark background to match the theme */
-  border-radius: 12px; /* Slightly larger radius for rounded corners */
-  padding: 20px; /* More padding for spacing */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  margin-bottom: 20px; /* Space between the container and other content */
+  background-color: #2c2c2e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 20px;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Habbits-Container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 0.2vw;
+  margin-bottom: 20px; /* Add space below hobbies list */
+}
+
+#Habbit-Input {
+  margin: 20px 0; /* Add spacing around the input */
+}
+
+
+.data-inputs {
+  width: 100%;
+  padding: 12px 0.5vw;
+  box-sizing: border-box;
+  background-color: #2c2c2e;
+  border: 2px solid #3a3a3c;
+  border-radius: 8px;
+  color: #f5f5f7;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.data-inputs:focus {
+  outline: none;
+  border-color: #4e9bff; /* Change border color on focus */
 }
