@@ -1,38 +1,116 @@
-.App {
+/* Apple Dark Theme Look */
+
+body {
+  background-color: #1c1c1e;
+  color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  width: 90%;
+  max-width: 400px;
+  background: #2c2c2e;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #ffffff;
+  font-family: 'Source Code Pro';
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p{
+  color: #ffffff;
+  font-family: 'Source Code Pro';
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #3a3a3c;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #48484a;
+}
+
+
+#Buttons-Container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-button {
+  background-color: #3a3a3c;
+  color: #f5f5f7;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-button:hover {
+  background-color: #48484a;
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  background-color: #58585a;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+
+
+.list-items{
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.list-items:hover{
+  background-color: #48484a;
+  transform: translateY(-2px);
+}
+
+.list-items:active{
+  outline: none;
+}
+
+.list-items:focus{
+  outline: none;
+}
+
+#Hobbies-Container {
+  background-color: #2c2c2e; /* Dark background to match the theme */
+  border-radius: 12px; /* Slightly larger radius for rounded corners */
+  padding: 20px; /* More padding for spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space between the container and other content */
 }
