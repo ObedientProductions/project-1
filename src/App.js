@@ -10,6 +10,7 @@ function App() {
   const listItemRefs = useRef([]);
   const habbit_input = useRef();
 
+  //default hobbies aka Habbits
   const defaultHobbies = [
     "🐌 Threatening a snail", 
     "🪞 Offering a chair to your reflection", 
